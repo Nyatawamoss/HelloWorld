@@ -5,10 +5,12 @@ pipeline {
 				steps{
 					echo 'Hi canım'
 				}
+			}
 			stage('Two'){
 				steps{
 					input('answer me')
 				}
+			}
 			stage('Three'){
 				when{
 					not{
@@ -18,6 +20,7 @@ pipeline {
 				steps {
 					echo 'Hello'
 				}
+			}
 			stage('Four'){
 				parallel{
 					stage('Unit Test'){
@@ -42,4 +45,4 @@ pipeline {
 				
 		}
 }
-			}
+			
