@@ -16,7 +16,7 @@ pipeline {
 					}
 				}
 				steps {
-					echo 'Hello')
+					echo 'Hello'
 				}
 			stage('Four'){
 				parallel{
